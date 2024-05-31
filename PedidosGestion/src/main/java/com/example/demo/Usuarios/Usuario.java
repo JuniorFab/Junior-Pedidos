@@ -1,13 +1,28 @@
 package com.example.demo.Usuarios;
-
+	
 public class Usuario {
-		private Long id;
+	/**
+	 * Estos son los atributos de la clase usuario y de que esta compuesto el usuario 
+	 */
+	private Long id;
 		private String nombre;
 		private String apellido;
 		private Long Telefono;
 		private String direccion;
 	
+		/**
+		 * 
+		 * @param id es para identificar al usuario 
+		 * @param nombre nombre de dicho usuario 
+		 * @param apellido apellido de dicho usuario
+		 * @param telefono telefono de dicho usuario 
+		 * @param direccion  dirreccion de dicho usuario 
+		 */
 		
+		/**
+		 * 
+		 * Esto es un constructor el cual con el podemos crear un usario pasanadole los parametros 
+		 */
 		
 		public Usuario(Long id, String nombre, String apellido, Long telefono, String direccion) {
 			this.id = id;
@@ -17,7 +32,10 @@ public class Usuario {
 			this.direccion = direccion;
 		}
 		
-		
+		/**
+		 * 
+		 * Estos son todos los getter y setter para a lo hora de ver algo o modificar algo del usuario lo podamos hacer sin problema
+		 */
 		public Long getId() {
 			return id;
 		}
@@ -49,7 +67,9 @@ public class Usuario {
 			this.direccion = direccion;
 		}
 
-
+		/**
+		 * Esto es el to string que sirve para poder ver de una forma toda la informacion del usuario tambien lo puedes cambiar a tu gusto
+		 */
 		@Override
 		public String toString() {
 			return "Usuario [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", Telefono=" + Telefono
