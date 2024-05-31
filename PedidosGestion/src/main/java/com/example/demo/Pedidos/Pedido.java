@@ -6,14 +6,27 @@ import com.example.demo.Enum.EstadoDelPedido;
 import com.example.demo.Usuarios.Usuario;
 
 public class Pedido {
-	
+		/**
+		 * Estos son los atributos de lo que esta compuesto un pedido
+		 */
 		private int pedido;
 		private double precio;
 		private EstadoDelPedido estado;
 		private LocalDate fecha;
 		private Usuario user;
 		
-		
+		/**
+		 * 
+		 * @param pedido
+		 * @param precio
+		 * @param estado
+		 * @param fecha
+		 * @param user
+		 */
+		/**
+		 * 
+		 * Esto es el constructor para la hora de crear un pedido
+		 */
 		
 		public Pedido( int pedido,double precio, EstadoDelPedido estado, LocalDate fecha, Usuario user) {
 			super();
@@ -23,6 +36,11 @@ public class Pedido {
 			this.fecha = LocalDate.now();
 			this.user = user;
 		}
+		
+			/**
+			 * 
+			 * Estos son los  getter y setter por si hay que modificar o queremos saber algo de dicho pedido 
+			 */
 		
 		
 		public int getPedido() {
@@ -65,7 +83,9 @@ public class Pedido {
 			this.user = user;
 		}
 
-
+		/**
+		 * Esto es un string que sirve para poder visualizar de una forma pero esto lo puedes modificar a tu gusto
+		 */
 		@Override
 		public String toString() {
 			return "Pedido [pedido=" + pedido + ", precio=" + precio + ", estado=" + estado + ", fecha=" + fecha
